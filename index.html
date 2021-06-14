@@ -1,39 +1,46 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recipe Page</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
       integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+      crossorigin="anonymous">
+    
+    <!-- Added the BULMA style-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   </head>
   <body>
-    <h1>Recipe Page</h1>
-    <button role="button" class="button" onclick="getRecipes('balanced')">
+    <!---I am trying to center the heading. Having trouble!-->
+      <div class="column is-desktop is-centered">
+    <h1>Recipe Page</h1></div>
+    <a class ="button is-primary" onclick="getRecipes('balanced')">
       Balanced
-    </button>
-    <button role="button" class="button" onclick="getRecipes('low-carb')">
+    </a>
+    <a class ="button is-primary" onclick="getRecipes('low-carb')">
       Low-Carb
-    </button>
-    <button role="button" class="button" onclick="getRecipes('high-protein')">
+    </a>
+    <a class ="button is-primary" onclick="getRecipes('high-protein')">
       High-Protein
-    </button>
-    <button role="button" class="button" onclick="getRecipes('low-fat')">
+    </a>
+    <a class ="button is-primary"onclick="getRecipes('low-fat')">
       Low-Fat
-    </button>
-    <button role="button" class="button" onclick="getRecipes('low-carb')">
+    </a>
+    <a class ="button is-primary" onclick="getRecipes('low-carb')">
       Low-Carb
-    </button>
-    <button role="button" class="button" onclick="getRecipes('low-sodium')">
+    </a>
+    <a class ="button is-primary" onclick="getRecipes('low-sodium')">
       Low-Sodium
-    </button>
-
+    </a>
+<!-- you want this div to grab the data, correct?-->
     <div id="myData"></div>
-
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-4 is-vertical is-danger">
+        <p class="title">aligned with right tile</p>
+        <p class="subtitle">With an image</p>
     <script
-      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      src="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
       integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
       crossorigin="anonymous"
     ></script>
