@@ -5,16 +5,13 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
-<<<<<<< HEAD
-      crossorigin="anonymous">
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=">
+
     
-    <!-- Added the BULMA style-->
+   <!---Added Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-=======
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css" />
->>>>>>> b85a4eb6230356d4b27617cd1d197135c481ead0
+
+  
   </head>
   <body>
     <!---I am trying to center the heading. Having trouble!-->
@@ -40,14 +37,47 @@
     </a>
 <!-- you want this div to grab the data, correct?-->
     <div id="myData"></div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-4 is-vertical is-danger">
-        <p class="title">aligned with right tile</p>
-        <p class="subtitle">With an image</p>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-4 mt-4">
+        <div class="tile">
+          
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+              
+              <p class="subtitle" id="image">Recipe Name</p>
+              <figure class="image is-4by3">
+                <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/salmon_salad_bowl_0.jpg?itok=tNY6CVIc">
+              </figure>
+            </article>
+          </div>
+        </div>
+       
+      </div>
+      <div class="tile is-parent mt-4">
+        <article class="tile is-child notification is-success">
+          <div class="content" id="yieldnutrition">
+            <h2 class="title">Yield:</h2>
+            <a class="link" id="nutriinfo">Nutrition Info Link</a>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </div>
+        </article>
+      </div>
+  
+      <div class="tile is-parent is-vertical mt-4" id="bottom">
+           
+        <article class="tile is-child notification is-warning">
+          <h4 class="title">Prep time:</h4>
+          <h4 class="subtitle">Recipe:</h4>
+        </article>
+      </div>
+      
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
-      crossorigin="anonymous"></script>
+></script>
     <script src="script.js"></script>
   </body>
 </html>
