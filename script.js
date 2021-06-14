@@ -20,7 +20,7 @@ var diets = [
 
 function getRecipes(dietKey) {
   var mainContainer = document.getElementById("myData");
-
+removePreviousRecipes();
   fetch(
     `https://api.edamam.com/api/recipes/v2?type=public&app_id=fb023251&app_key=6c3b51083603e37b5d7d3442be4a2df2&diet=${dietKey}`,
     {
@@ -41,3 +41,9 @@ function getRecipes(dietKey) {
     });
   console.log("got here");
 }
+
+// this function removes all html contained within the ID
+   function removePreviousRecipes() {
+ let parent = document.getElementById("myData");
+  parent.innerHTML = "";
+ }
