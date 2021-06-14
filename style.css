@@ -1,3 +1,7 @@
 h1 {
   color: green;
 }
+
+#bottom is-parent is-vertical{
+  color: azure;
+}
