@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
-</head>
-<body>
-    <div class="work-feature-block row">
-        <div class="columns medium-7">
-          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Balanced Diet
+      </h1>
+     
+    </div>
+  </section>
+
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-4">
+      <div class="tile">
+        
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-info">
+            
+            <p class="subtitle" id="category1">Recipe Name</p>
+            <figure class="image is-4by3">
+              <img src="images\balanceddiet.jpg">
+            </figure>
+          </article>
         </div>
-        <div class="columns medium-5">
-          <h2 class="work-feature-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
+      </div>
+     
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-success">
+        <div class="content" id="yieldnutrition">
+          <h2 class="title">Yield:</h2>
+          <a class="link" id="nutriinfo">Nutrition Info Link</a>
+          <div class="content">
+            <!-- Content -->
+          </div>
         </div>
-      </div>      
-    <script src="script.js"></script>
-</body>
+      </article>
+    </div>
+
+    <div class="tile is-parent is-vertical" id="bottom">
+         
+      <article class="tile is-child notification is-warning">
+        <h4 class="title">Prep time:</h4>
+        <h4 class="subtitle">Recipe:</h4>
+      </article>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+
+  </body>
 </html>
