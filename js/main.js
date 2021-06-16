@@ -14,8 +14,11 @@ function getRecipes(dietKey) {
     .then((response) => response.json())  // displays response in json
     .then(function (data) {
       console.log(data);
-      for (var i = 0; i < data.hits.length; i++) {  // loops through the whole thing
-        var div = document.createElement("div");   // creates div, adds columns, displays recipe image, label, and the "View Recipe" link for each recipe
+      // loop creates layout for each object called
+      for (var i = 0; i < data.hits.length; i++) {  
+         // creates div element
+        var div = document.createElement("div");   
+           // adds class to 'columns' class to element
         div.classList.add("columns");
         div.innerHTML = `
           <div class="column is-1 recipe-photo">
@@ -26,6 +29,7 @@ function getRecipes(dietKey) {
             <a href="page.html" onclick="setURI('${data.hits[i]._links.self.href}')" class="button">View Recipe</a>
           </div>
         `;
+        // appends new element to ID
         mainContainer.appendChild(div);
       }
     })
@@ -38,9 +42,11 @@ function getRecipes(dietKey) {
 function setURI(uri) {
   localStorage.setItem("uri", uri);
 }
-// function for displaying recipe name, yield, prep time, ingredients, and extensive nutritional data
+// function for creating single recipe page layout
 function getRecipe() {
+   // same as before, gets ID
   var mainContainer = document.getElementById("myRecipe");
+   // gets stored URI
   let getURI = localStorage.getItem("uri");
   console.log(getURI);
   fetch(getURI, {
@@ -50,6 +56,10 @@ function getRecipe() {
     .then(function (data) {
       console.log(data.recipe);
       var div = document.createElement("div");
+      
+      // get all needed objects within object
+      // will use map method to output data within template literal
+      
       var obj = data.recipe.ingredientLines;
       var nutritional = data.recipe.totalNutrients;
       var daily = data.recipe.totalDaily;
@@ -106,7 +116,6 @@ function getRecipe() {
                               </ul>
           </div>
         `;
-      loopList(data.recipe.ingredients);
       mainContainer.appendChild(div);
     })
     .catch((error) => {
@@ -114,8 +123,6 @@ function getRecipe() {
     });
 }
 
-//calling the function that loops through the entire list 
-function loopList(x) {}
 
   // psuedo reset, removes all HTML contained within the ID 
 function removePreviousRecipes() {

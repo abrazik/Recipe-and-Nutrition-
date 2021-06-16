@@ -1,9 +1,10 @@
 body {
   margin: 15px;
 }
+
 h1 {
-  color: #4c9fe2;
-  font-size: 72px;
+  color: #a0b7ca;
+  font-size: 50px;
   font-weight: bold;
 }
 h3 {
@@ -13,4 +14,13 @@ h3 {
   border: 1px solid #4c9fe2;
   border-radius: 5px;
   margin: 10px 0;
+  background-color: #a0b7ca;
 }
+#myRecipe .columns {
+  background-color: #a0b7ca;
+
+}
+.button {
+  background-color: rgb(185, 185, 185);
+  border-color: #000000;
+  color: #000000;
