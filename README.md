@@ -7,9 +7,9 @@ https://developer.edamam.com/edamam-docs-nutrition-api
 
 
 
-As a group we made an app for people that have specific diets but want to find delicious recipes that are easy to make
+As a group we made an application  for people that have specific diets but want to find delicious recipes that are easy to make.
 
-The completed application should meet the following criteria:
+When deploying the application: 
 
 * As a USER I should be presented with a landing page that has a few demo recipes and a list of different diets
 
@@ -17,4 +17,4 @@ The completed application should meet the following criteria:
 
 * THEN I should be able to click that diet
 
-* THEN I should be able to filter and view different recipes that are specific to the diet that I have chosen1
+* THEN I should be able to filter and view different recipes that are specific to the diet that I have chosen
