@@ -1,0 +1,16 @@
+body {
+  margin: 15px;
+}
+h1 {
+  color: #4c9fe2;
+  font-size: 72px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 32px;
+}
+#myData .columns {
+  border: 1px solid #4c9fe2;
+  border-radius: 5px;
+  margin: 10px 0;
+}
